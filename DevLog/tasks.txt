@@ -1,0 +1,24 @@
+# Task 1: Text Summarization Tool
+
+- Create a tool that Summarizes Lengthy Arthicles Using 
+    Natural Language Processing Techniques.
+- Deliverable: A Python Script showcasing imput text and concise summaries.
+
+
+# Task 2: Speech Recognition System 
+
+- Build a basic Speech-To-Text system using Pre-trained models and libraries 
+    like SpeechRecognition or Wav2Vec.
+- Deliverable: A funtional system capable of transcribing short audio clip
+
+
+# Task 3: Natural Style Transfer
+
+- Implement a neural style transfer model to apply artistic styles to photographs.
+- Deliverable: A python script or notebook with examples of styled images.
+
+
+# Task 4: Generative Text Model
+
+- Create a text generation model using GPT or LSTM to generate coherent paragraphs on specify topics.
+- Deliverable: A notebook demonstrating generated text based on user prompts.

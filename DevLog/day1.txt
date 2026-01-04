@@ -1,0 +1,33 @@
+Date: 03 jan 2026
+
+This is the 1st day when i have received my tasks and also started my internship. 
+No meeting has taken place, only tasks are given. The 1st task is a Text summarization tool.
+From previous experience, Hugging Face has a function "pipeline" which is able to summaries the text,
+so that will the first plan of action. Just need to make a good display in the CMD and the task will be done.
+If wanted to improve further, can look into using pure NLTK for summarization, 
+but it is not efficient. Other feature that can be added is to read a file (text or pdf) 
+and summaries from that. The 3rd feature that can be implemented i using Gradio for a proper
+UI.
+
+Task 2 is Speech recognition system. Will use gradio for UI, where the user can either
+directly record a voice, or drag and drop one. while Speech recognition library is easy to implemented
+need to check for choices of multiligual. can also implement text to speech but it isn't worth
+since takes too much processing power.
+
+task 3 is Natural Style Transfer. From what I understood, need 2 images: 1 for style
+other for context. need to convert the context image into the given style. Need to
+make research on it. 
+
+Task 4 is Generative text model. Just need to use gradio, langchain and google gemini,
+and also provide the feature of maintaining conversation.
+
+For today, all the planning is done, along with the installation of potential dependencies.
+
+Libraries added and to be used:
+- uv 
+- gradio 
+- transformers 
+- pyaudio 
+- speechrecognition 
+- langchain 
+- langchain-google-genai 

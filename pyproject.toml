@@ -1,0 +1,14 @@
+[project]
+name = "codtech"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=6.2.0",
+    "langchain>=1.2.0",
+    "langchain-google-genai>=4.1.2",
+    "pyaudio>=0.2.14",
+    "speechrecognition[audio]>=3.14.5",
+    "transformers>=4.57.3",
+]
