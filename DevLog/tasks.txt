@@ -2,7 +2,7 @@
 
 - Create a tool that Summarizes Lengthy Arthicles Using 
     Natural Language Processing Techniques.
-- Deliverable: A Python Script showcasing imput text and concise summaries.
+- Deliverable: A Python Script showcasing input text and concise summaries.
 
 
 # Task 2: Speech Recognition System 

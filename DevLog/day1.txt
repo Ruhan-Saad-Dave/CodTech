@@ -1,4 +1,4 @@
-Date: 03 jan 2026
+Date: 03 jan 2026 (saturday)
 
 This is the 1st day when i have received my tasks and also started my internship. 
 No meeting has taken place, only tasks are given. The 1st task is a Text summarization tool.
