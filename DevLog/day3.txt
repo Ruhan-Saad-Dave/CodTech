@@ -1,0 +1,10 @@
+Date: 06 Jan 2026 (Tuesday)
+
+STarted planning for task 2. found a sample script on geek for geeks,
+for speech recognition library. The code works without problem.
+task 2 is complete, but it felt too easy, so will make it more impressive later.
+for now will work on task 4.
+reason for not working on task 3 is because i have no idea how to do it,
+and how it works, while task4 is easy and i have done it mutiple times.
+
+My approach is to use langchain and google gemini with continuos chat
