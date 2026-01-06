@@ -7,4 +7,6 @@ for now will work on task 4.
 reason for not working on task 3 is because i have no idea how to do it,
 and how it works, while task4 is easy and i have done it mutiple times.
 
-My approach is to use langchain and google gemini with continuos chat
+My approach is to use langchain and google gemini with continuos chat.
+added library python-dotenv to read the ENV files
+used the google 2.5 flash, and task 4 has been completed.
