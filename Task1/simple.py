@@ -1,10 +1,10 @@
+"""
+Very simple CMD based text summarization with loop
+"""
+
+
 from transformers import pipeline
 
-"""
-# use bart
-summarizer = pipeline("summarization")
-summarizer("An apple a day, keeps the doctor away", min_length=5, max_length=20)
-"""
 pipe = pipeline("summarization", 
                 device = -1, 
                 min_length = 5, 
