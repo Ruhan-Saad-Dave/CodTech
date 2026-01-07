@@ -9,9 +9,15 @@ This repository is created for storing the code for the task of my internship.
 For my daily journal of the work that I have done everyday, refer to [Devlog](#Devlog).
 
 ## Setting Up
-Make sure that you have installed the latest Python version, and an IDE for executing the code like VSCode.
+Make sure that you have installed the latest Python version, and an IDE for executing the code like VSCode, also install git for easily copying the codes into your system.
 - [Download Python](https://www.python.org/downloads/)
 - [Download VSCode](https://code.visualstudio.com/download)
+- [Download git](https://git-scm.com/install/)
+Copy the file using:
+```bash
+git clone https://github.com/Ruhan-Saad-Dave/CodTech.git
+```
+<br>
 To install the dependencies:
 ```bash
 pip install uv
