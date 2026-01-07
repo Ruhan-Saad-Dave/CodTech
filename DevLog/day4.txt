@@ -1,4 +1,4 @@
-Date: 07 Jan 2025
+Date: 07 Jan 2025 (Wednesday)
 
 STarted working on the final task.
 installed dependencies tensorflow, tensorflow_hub and matplotlib
