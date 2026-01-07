@@ -1,0 +1,13 @@
+Date: 07 Jan 2025
+
+STarted working on the final task.
+installed dependencies tensorflow, tensorflow_hub and matplotlib
+the plan is to use one of the pretrained model on tensorflow hub to copy the image style onto the content.
+
+using google collab since laptop processing speed slow. 
+discovered that collab extension cannot read images, and need to find a new way.
+Model is able to generate the image, and hence task 3 is complete.
+
+All the task for submission of the internship has been completed.
+The next steps can be to document the stuff that i already know,
+also can improve more on the task to make them look more good.
