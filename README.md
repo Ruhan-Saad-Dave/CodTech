@@ -1,83 +1,143 @@
-# CodTech
+# CodTech AI Internship Tasks
 
-This repository is created for storing the code for the task of my internship.
-- Company: CodTech IT Solutions PVT.LTD 
-- Duration: 6 weeks 
-- Role: Artificial Intelligence 
-- Date: 03 Jan 2026 ~ 14 February 2026 
-<br>
-For my daily journal of the work that I have done everyday, refer to [Devlog](#Devlog).
+This repository contains the projects completed during my Artificial Intelligence internship at CodTech IT Solutions.
 
-## Setting Up
-Make sure that you have installed the latest Python version, and an IDE for executing the code like VSCode, also install git for easily copying the codes into your system.
-- [Download Python](https://www.python.org/downloads/)
-- [Download VSCode](https://code.visualstudio.com/download)
-- [Download git](https://git-scm.com/install/)
-Copy the file using:
-```bash
-git clone https://github.com/Ruhan-Saad-Dave/CodTech.git
-```
-<br>
-To install the dependencies:
-```bash
-pip install uv
-uv sync
-```
-The code to run each file will be given in the below sections.
+### Project Overview
+- **Company:** CodTech IT Solutions PVT.LTD
+- **Role:** Artificial Intelligence Intern
+- **Duration:** 6 Weeks (03 Jan 2026 - 14 Feb 2026)
 
-### Special Note:
-The main code is stored in the "main.py" file of each folder. There is also a "simple.py" file which has the minimum code that fully satisfies the requirement, "main.py" just adds on more features to make it look more impressive. There is also a Jupyter notebook called "main.ipynb" which can be used to increase the execution speed, it is recommended to use the google collab extension for the execution as some of the code takes lots of processing power. There is a discovered bug that despite the code is stored on github, "main.ipynb" sometimes remains empty, to solve that just copy paste the code and execute it, special instruction will be given below for each task.
+For a daily journal of my work, please refer to the [DevLog](./DevLog/).
 
-### Tasks explaination:
-#### Task1: Text Summarizer Tool
-Create a tool that Summarizes Lengthy Arthicles Using Natural Language Processing Techniques.
+---
+
+## Table of Contents
+- [Setup and Installation](#setup-and-installation)
+- [Project Structure](#project-structure)
+- [Task Explanations](#task-explanations)
+  - [Task 1: Text Summarizer Tool](#task-1-text-summarizer-tool)
+  - [Task 2: Speech Recognition System](#task-2-speech-recognition-system)
+  - [Task 3: Neural Style Transfer](#task-3-neural-style-transfer)
+  - [Task 4: Generative Text Model](#task-4-generative-text-model)
+- [Usage](#usage)
+- [Contact](#contact)
+
+---
+
+## Setup and Installation
+
+To get started, you'll need Python, a code editor like VSCode, and Git installed on your system.
+
+1.  **Prerequisites:**
+    - [Download Python](https://www.python.org/downloads/)
+    - [Download VSCode](https://code.visualstudio.com/download)
+    - [Download Git](https://git-scm.com/install/)
+
+2.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Ruhan-Saad-Dave/CodTech.git
+    cd CodTech
+    ```
+
+3.  **Install dependencies:**
+    This project uses `uv` for fast dependency management.
+    ```bash
+    pip install uv
+    uv sync
+    ```
+
+---
+
+## Project Structure
+
+Each task is organized into its own folder (e.g., `Task1/`, `Task2/`). Inside each folder, you will find three common files:
+
+-   `main.py`: The primary, feature-rich version of the script, which often includes a Gradio-based user interface.
+-   `simple.py`: A minimal, terminal-based version of the script that satisfies the core requirements of the task.
+-   `main.ipynb`: A Jupyter Notebook version of the code. This is ideal for experimentation and can offer faster execution for computationally intensive tasks, especially when run on platforms like Google Colab.
+
+> **Note:** There is a known issue where Jupyter Notebooks (`.ipynb`) may appear empty on GitHub. If you encounter this, simply copy the code from the corresponding `main.py` file and paste it into the notebook to execute it.
+
+---
+
+## Task Explanations
+
+### Task 1: Text Summarizer Tool
+**Objective:** Create a tool that summarizes lengthy articles using Natural Language Processing techniques.
 <hr>
-Hugging Face's "Transformer" library has a function called "pipeline()", in it we can pass different types of arguement like "text-classification", "automatic-speech-recognition", "depth-estimation" and more (Check [here](https://huggingface.co/docs/transformers/en/main_classes/pipelines) for more info), and within these tasks there is one called "summarization".<br>
-Behind the function, it uses a pretrained model like "bart-large-cnn", "google-t5/t5-small", etc are used which speciallizes in text summarization. Although the approach doesn't look much like NLP approach, these models use complex NLP techniques to summarize the text. Also in professional scenario, it is always recommended to use pre-trained model instead of building and training one from scratch as it helps to reduce time and cost.<br>
-The simple approach maintains a while loop so that the user can keep on summarizing text in the terminal, while the complex approach (main.py) adds features like user interface and summarizing text from a file. The user interface is build using [Gradio](https://www.gradio.app/docs/gradio/chatinterface), which is a python library that sort of builds a website. It is mainly used by Data Scientists and AI Engineers to present the workings of their model to a non-AI related team member. For reading the PDF file, [PyMuPDF](https://pymupdf.readthedocs.io/en/latest/) is used, python has built in method to read text files. When user uploads a text or pdf file, the system will read the contents and give this content to the "pipeline" for summarization task.<br>
-To execute [Main file of Task1](#Task1/main.py):
+This tool utilizes the `pipeline()` function from Hugging Face's **Transformers** library, a powerful and common approach for summarization tasks. It uses pre-trained models like `bart-large-cnn` that employ complex NLP techniques to generate high-quality summaries. The `main.py` version provides a user-friendly interface using **Gradio**, allowing users to summarize text from direct input or uploaded PDF files (read with **PyMuPDF**).
+
+### Task 2: Speech Recognition System
+**Objective:** Build a basic Speech-To-Text system using pre-trained models.
+<hr>
+The core of this task is the **SpeechRecognition** library, which uses the Google Speech Recognition API to transcribe audio to text. The `main.py` version enhances this by using **OpenAI's Whisper** model for robust, multilingual speech recognition through a **Gradio** interface, offering higher accuracy and language flexibility.
+
+### Task 3: Neural Style Transfer
+**Objective:** Implement a neural style transfer model to apply artistic styles to photographs.
+<hr>
+Neural Style Transfer blends the content of one image with the artistic style of another. This implementation uses a pre-trained model from **TensorFlow Hub** (`magenta/arbitrary-image-stylization-v1-256`), which is highly efficient. The `main.py` script provides a **Gradio** interface where users can upload their own content and style images to create unique, stylized artwork.
+
+### Task 4: Generative Text Model
+**Objective:** Create a text generation model using GPT or LSTM to generate coherent paragraphs on specific topics.
+<hr>
+This task leverages **Google Gemini** through the **LangChain** framework to generate text. LangChain simplifies the process of building AI applications by providing a standard interface for interacting with various language models. The `main.py` version uses **Gradio** to create an interface for generating text on user-specified topics.
+
+---
+
+## Usage
+
+To run any of the scripts, use the `uv run` command from the root directory of the project.
+
+<details>
+<summary><b>Task 1 Commands</b></summary>
+
 ```bash
+# For the Gradio UI version
 uv run Task1/main.py
-```
-To execute [Simple version of Task1](#Task1/simple.py):
-```bash
+
+# For the simple terminal version
 uv run Task1/simple.py
 ```
+</details>
 
-#### Task2: Speech Recognition System
-Build a basic Speech-To-Text system using Pre-trained models and libraries like SpeechRecognition or Wav2Vec.
-<hr>
-Python has a library called [SpeechRecognition](https://pypi.org/project/SpeechRecognition/), which is able to perform Speech-To-Text tasks. In the background it uses Google Speech recognition for processing the audio into audio.<br>
-In the simple file, the system asks the user to speak, and after few seconds the recording stops, and the transcribed text is displayed. All of these are done in the terminal.<br>
-For the complex file, Gradio is again used for user interface, and this time [OpenAI Whisper](https://pypi.org/project/openai-whisper/) is used for multilingual purposes to understand the print out non-english languages (it can understand english too). Whisper is also capable of speech translation and language identification. It is trained on a large diversity of data.<br>
-To execute [Main file of Task2](#Task2/main.py):
+<details>
+<summary><b>Task 2 Commands</b></summary>
+
 ```bash
+# For the Gradio UI version
 uv run Task2/main.py
-```
-To execute [Simple version of Task2](#Task2/simple.py):
-```bash
+
+# For the simple terminal version
 uv run Task2/simple.py
 ```
+</details>
 
-#### Task3: Natural Style Transfer
-Implement a neural style transfer model to apply artistic styles to photographs.
-<hr>
-More details coming soon.
+<details>
+<summary><b>Task 3 Commands</b></summary>
 
-#### Task4: Generative Text Model
-Create a text generation model using GPT or LSTM to generate coherent paragraphs on specify topics.
-<hr>
-The easiest way to do this is by using Google Gemini via Langchain. [Langchain](https://docs.langchain.com/oss/python/learn) is a python library that is mainly used for developing AI and agentic application, it supports many models (including API models and ones from huggingface), it also can build pipelines for prompts, file reading, agentic tools etc. [Google Gemini](https://docs.langchain.com/oss/python/integrations/chat/google_generative_ai) is used as recently Google gave 1 year pro subscription to all students, so development using it is much easier.<br>
-The simple method creates a loop where user can continuosly generate content. Note that the task mentioned about content generation not actual chatbot, so there is no need to maintain history.<br>
-The complex method again uses Gradio for user interface, also the user will be able to easily copy the text or regenerate the response.<br>
-To execute [Main file of Task4](#Task4/main.py):
 ```bash
-uv run Task4/main.py
+# For the Gradio UI version
+uv run Task3/main.py
+
+# For the simple terminal version
+uv run Task3/simple.py
 ```
-To execute [Simple version of Task4](#Task4/simple.py):
+</details>
+
+<details>
+<summary><b>Task 4 Commands</b></summary>
+
 ```bash
+# For the Gradio UI version
+uv run Task4/main.py
+
+# For the simple terminal version
 uv run Task4/simple.py
 ```
+</details>
 
-<br><br><hr>
-Thank you for visiting this repo, for more questions please use the "Issues" section on github, or [email me](ruhandave2003@gmail.com)
+---
+
+## Contact
+
+Thank you for visiting this repository. For any questions, please use the "Issues" section on GitHub or [email me](mailto:ruhandave2003@gmail.com).

@@ -1,33 +1,26 @@
-Date: 03 jan 2026 (saturday)
+Date: 03 Jan 2026 (Saturday)
 
-This is the 1st day when i have received my tasks and also started my internship. 
-No meeting has taken place, only tasks are given. The 1st task is a Text summarization tool.
-From previous experience, Hugging Face has a function "pipeline" which is able to summaries the text,
-so that will the first plan of action. Just need to make a good display in the CMD and the task will be done.
-If wanted to improve further, can look into using pure NLTK for summarization, 
-but it is not efficient. Other feature that can be added is to read a file (text or pdf) 
-and summaries from that. The 3rd feature that can be implemented i using Gradio for a proper
-UI.
+This is the 1st day of my internship. I have received my tasks and set up my development environment.
+No meetings have taken place; only the tasks were assigned. The 1st task is a Text Summarization tool.
+From previous experience, I know Hugging Face has a `pipeline()` function that can summarize text, so that will be the first plan of action. I will focus on creating a good display in the command line.
 
-Task 2 is Speech recognition system. Will use gradio for UI, where the user can either
-directly record a voice, or drag and drop one. while Speech recognition library is easy to implemented
-need to check for choices of multiligual. can also implement text to speech but it isn't worth
-since takes too much processing power.
+To improve it further, I could look into using pure NLTK for summarization, but it is not as efficient. Other features that can be added are reading from a file (text or PDF) and summarizing the content. A third feature could be implementing a proper UI using Gradio.
 
-task 3 is Natural Style Transfer. From what I understood, need 2 images: 1 for style
-other for context. need to convert the context image into the given style. Need to
-make research on it. 
+Task 2 is a Speech Recognition System. I will use Gradio for the UI, where the user can either record their voice directly or upload an audio file. While the SpeechRecognition library is easy to implement, I need to research choices for multilingual support.
 
-Task 4 is Generative text model. Just need to use gradio, langchain and google gemini,
-and also provide the feature of maintaining conversation.
+Task 3 is Neural Style Transfer. From what I understand, it requires two images: one for content and the other for style. The goal is to convert the content image into the given style. I will need to do more research on this.
+
+Task 4 is a Generative Text Model. The plan is to use Gradio, LangChain, and Google Gemini, and also provide a feature for maintaining conversation history.
 
 For today, all the planning is done, along with the installation of potential dependencies.
 
-Libraries added and to be used:
-- uv 
-- gradio 
-- transformers 
-- pyaudio 
-- speechrecognition 
-- langchain 
+Libraries to be used:
+- uv
+- gradio
+- transformers
+- torch
+- PyMuPDF
+- SpeechRecognition
+- openai-whisper
+- langchain
 - langchain-google-genai 

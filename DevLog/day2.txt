@@ -1,12 +1,10 @@
-Date: 05 Jan 2026 (Monday) 
+Date: 05 Jan 2026 (Monday)
 
-This is the day I officially started working on Task 1: Text summarization tool.
+Today I officially started working on Task 1: Text Summarization Tool.
 
-My approach is to make a simple CMD client that asks user for text, and simply summaries it
-using hugging face built in functions.
-Discovered to run the pipeline function, need pytorch library
-for the pre trained model, decided to use facebook/bert-base
+My approach is to make a simple command-line client that asks the user for text and summarizes it using a Hugging Face pipeline.
+I discovered that I need the PyTorch library to run the pipeline function. For the pre-trained model, I decided to start with `facebook/bart-large-cnn`.
 
-Took a lot of time to run the code on laptop, so used google collab extension,
-Discovered that the input field comes on the top of the window in the search bar which is weird.
-but regardless, the code is working and can be said task 1 is done.
+It took a lot of time to run the code on my laptop, so I used the Google Colab extension in VSCode. I noticed that the input field appears at the top of the window in the search bar, which is an odd UI behavior but doesn't break functionality.
+
+Regardless, the code is working, and the basic requirements for Task 1 are complete.

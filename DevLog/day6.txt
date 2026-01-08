@@ -7,3 +7,8 @@ While Speechrecognition library is very good for speech to text, we can also use
 OpenAI Whisper, but it will take lots of processing power, only advantage is that it makes it multi lingual.
 So in the gradio interface will make 2 sections, one for normal english and other for foreign languages
 
+after carefull consideration, the plan of using openai whisper has been dropped, because it wont be
+worth it.
+
+Also improved Task 4 to use gradio as user interface, and in task 3 too, where the user can drop the image
+and get the generated content.

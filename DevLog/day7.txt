@@ -1,0 +1,8 @@
+Date: 10 Jan 2026 (Saturday)
+
+Since all the task program has been upgraded, today is the day of spending most time documenting
+the repository. Updated README.md to include explaination of each task and a way to setup and run the 
+repo, also added loads of comments in the file.
+
+All the task of the internship is officially done, although it's way too early, but what's done
+is done.
