@@ -1,7 +1,10 @@
 """
 Very simple CMD based text summarization with loop
 """
+import logging
 
+# Disable INFO and DEBUG logs everywhere
+logging.disable(logging.INFO)
 
 from transformers import pipeline
 

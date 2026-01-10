@@ -24,13 +24,13 @@ def summarize(user_data: Dict , history: List) -> str:
             output = summary[0]['summary_text']
             return output
         elif files != [] and message == "": #when only file is given
-            if files[0] == ".txt": #pasted text is treated as .txt file
+            if files[0][-4:] == ".txt": #pasted text is treated as .txt file
                 with open(files[0], 'r') as f:
                     file_content = f.read()
                 summary = pipe(file_content)
                 output = summary[0]['summary_text']
                 return output
-            elif files[0] == ".pdf": #use PyMuPDF to read pdf files
+            elif files[0][-4:] == ".pdf": #use PyMuPDF to read pdf files
                 pdf_reader = fitz.open(files[0])
                 text = ""
                 for page in pdf_reader:

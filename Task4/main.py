@@ -14,7 +14,7 @@ def generate(user_data, history):
         "system",
         "You are a helpful assistant that generates content. You are strictly to generate content based on user input and cannot perform tasks like question answering or summarization.",
     ),
-    ("human", "I love programming."),
+    ("user", user_data),
 ]
     response = model.invoke(messages)
     
